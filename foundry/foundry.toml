@@ -1,0 +1,26 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib", "lib/openzeppelin-contracts/contracts"]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+# Add remappings for dependencies manually since forge install requires git
+remappings = [
+    '@openzeppelin/=lib/openzeppelin-contracts/contracts/',
+    'forge-std/=lib/forge-std/src/'
+]
+
+# Manually download OpenZeppelin contracts as forge install failed without git
+# mkdir -p lib/openzeppelin-contracts
+# cd lib/openzeppelin-contracts
+# curl -L https://github.com/OpenZeppelin/openzeppelin-contracts/archive/refs/tags/v5.0.2.tar.gz | tar -xz --strip-components=1
+# cd ../..
+
+# Optional: Manually download foundry-dotenv if needed and add remapping/lib path
+# mkdir -p lib/foundry-dotenv
+# cd lib/foundry-dotenv
+# curl -L https://github.com/drgorillamd/foundry-dotenv/archive/refs/heads/master.tar.gz | tar -xz --strip-components=1
+# cd ../..
+# # Add to libs: "lib/foundry-dotenv/src"
+# # Add to remappings: 'dotenv/=lib/foundry-dotenv/src/'
