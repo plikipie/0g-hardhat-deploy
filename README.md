@@ -8,10 +8,6 @@ This repository provides example scripts for deploying a simple ERC20 token (`My
 
 Each directory contains a self-contained example with specific setup and deployment instructions in its respective `README.md` file.
 
-## Purpose
-
-These examples are intended to help developers quickly get started with deploying smart contracts to the 0G Testnet V3 using their preferred framework.
-
 ## Contract
 
 The `MyToken.sol` contract is a basic ERC20 token with an initial supply minted to the deployer, using OpenZeppelin Contracts v5.0.2.
@@ -21,7 +17,7 @@ The `MyToken.sol` contract is a basic ERC20 token with an initial supply minted 
 *   **Network Name:** 0G Testnet V3
 *   **RPC URL:** `https://rpc-testnet.0g.ai`
 *   **Chain ID:** `80087`
-*   **Explorer:** (Add link when available)
+*   **Explorer:** [Chainscan](https://chainscan-newton.0g.ai/)
 
 ## General Requirements
 
