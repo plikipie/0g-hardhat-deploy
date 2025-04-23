@@ -14,10 +14,11 @@ The `MyToken.sol` contract is a basic ERC20 token with an initial supply minted 
 
 ## Network Details
 
-*   **Network Name:** 0G Testnet V3
-*   **RPC URL:** 
-*   **Chain ID:** 
-*   **Explorer:** [Chainscan](https://chainscan-newton.0g.ai/)
+*   **Network Name:** 0G-Galileo-Testnet
+*   **RPC URL:** https://evmrpc-testnet.0g.ai
+*   **Chain ID:** 80087
+*   **Token Symbol:** OG
+*   **Explorer:** [Chainscan](https://chainscan-galileo.0g.ai/)
 
 ## General Requirements
 
