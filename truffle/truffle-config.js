@@ -118,7 +118,7 @@ module.exports = {
         }
         return new HDWalletProvider(privateKey, rpcUrl);
       },
-      network_id: 80087, // Updated Chain ID for 0G Testnet V3
+      network_id: 16601, // Updated Chain ID for 0G Testnet V3
       gas: 5500000,
       confirmations: 2, // Number of confirmations to wait between deployments.
       timeoutBlocks: 200, // Number of blocks before a deployment times out

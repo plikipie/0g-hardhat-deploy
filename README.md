@@ -1,6 +1,6 @@
 # 0G Testnet V3 Deployment Script Examples
 
-This repository provides example scripts for deploying a simple ERC20 token (`MyToken.sol`) to the 0G Testnet V3 (Chain ID: 80087) using popular development frameworks:
+This repository provides example scripts for deploying a simple ERC20 token (`MyToken.sol`) to the 0G Testnet V3 (Chain ID: 16601) using popular development frameworks:
 
 *   **[Truffle](./truffle/README.md)**
 *   **[Hardhat](./hardhat/README.md)**
@@ -16,7 +16,7 @@ The `MyToken.sol` contract is a basic ERC20 token with an initial supply minted 
 
 *   **Network Name:** 0G-Galileo-Testnet
 *   **RPC URL:** https://evmrpc-testnet.0g.ai
-*   **Chain ID:** 80087
+*   **Chain ID:** 16601
 *   **Token Symbol:** OG
 *   **Explorer:** [Chainscan](https://chainscan-galileo.0g.ai/)
 

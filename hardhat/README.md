@@ -1,6 +1,6 @@
 # Hardhat Deployment Example for 0G Testnet V3
 
-This directory contains an example of deploying an ERC20 token (`MyToken.sol`) to the 0G Testnet V3 (Chain ID: 80087) using Hardhat.
+This directory contains an example of deploying an ERC20 token (`MyToken.sol`) to the 0G Testnet V3 (Chain ID: 16601) using Hardhat.
 
 ## Prerequisites
 

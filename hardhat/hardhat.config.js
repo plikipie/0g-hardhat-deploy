@@ -21,7 +21,7 @@ module.exports = {
     og_testnet_v3: {
       url: rpcUrl || "", // Fallback to empty string if not set
       accounts: privateKey ? [`0x${privateKey}`] : [], // Add 0x prefix
-      chainId: 80087, // Updated Chain ID for 0G Testnet V3
+      chainId: 16601, // Updated Chain ID for 0G Testnet V3
     },
   },
   // Optional: Specify etherscan API key if verification is needed later
