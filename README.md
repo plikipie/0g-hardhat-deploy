@@ -32,7 +32,7 @@ Hardhat ( https://hardhat.org/)
 **1. Clone the repo**
 
 ```
-git clone https://github.com/plikipie/0g-deploy-token.git
+git clone https://github.com/plikipie/0g-hardhat-deploy.git
 cd 0g-hardhat-deploy
 ```
 
