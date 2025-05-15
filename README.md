@@ -1,4 +1,4 @@
-HEAD
+
 
 # 🚀 0G Hardhat Deployment Example
 
