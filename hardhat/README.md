@@ -1,45 +1,24 @@
-# Hardhat Deployment Example for 0G Testnet V3
+cat > README.md << 'EOF'
+# 🚀 0G Hardhat Deployment Example
 
-This directory contains an example of deploying an ERC20 token (`MyToken.sol`) to the 0G Testnet V3 (Chain ID: 16601) using Hardhat.
+This project contains a simple example of deploying an ERC20 token (`MyToken.sol`) to the **0G Testnet V3 (Galileo)** using [Hardhat](https://hardhat.org).
 
-## Prerequisites
+---
 
-*   Node.js and npm
-*   Hardhat (`npm install --save-dev hardhat`)
+## 🧱 Contract
 
-## Setup
+The contract used is a basic ERC20 token built using [OpenZeppelin Contracts v5.0.2](https://github.com/OpenZeppelin/openzeppelin-contracts).
 
-1.  Install dependencies:
-    ```bash
-    npm install
-    ```
-2.  Create a `.env` file in this directory (`hardhat/.env`) by copying the example:
-    ```bash
-    cp .env.example .env
-    ```
-3.  Edit the `.env` file and add your private key and the 0G Testnet V3 RPC URL:
-    ```dotenv
-    PRIVATE_KEY="YOUR_PRIVATE_KEY_HERE_WITHOUT_0x"
-    RPC_URL="https://rpc-testnet.0g.ai"
-    ```
-    **Important:**
-    *   Ensure the private key corresponds to an account with funds on the 0G Testnet V3.
-    *   The private key should **not** have the `0x` prefix.
+```solidity
+// contracts/MyToken.sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.25;
 
-## Compilation
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-Compile the contracts:
+contract MyToken is ERC20 {
+    constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
+        _mint(msg.sender, initialSupply);
+    }
+}
 
-```bash
-npx hardhat compile
-```
-
-## Deployment
-
-Deploy the `MyToken` contract to the 0G Testnet V3:
-
-```bash
-npx hardhat run scripts/deploy.js --network og_testnet_v3
-```
-
-Hardhat will output the transaction hash and the address of the deployed contract.
